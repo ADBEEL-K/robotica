@@ -1,0 +1,206 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  background: linear-gradient(200deg, rgb(74, 140, 184), rgb(191, 209, 220));
+}
+h1{
+  color: aliceblue;
+  text-align: center;
+}
+.titulo{
+  font-family: "Danfo", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "ELSH" 0;
+}
+nav {
+  position: fixed;
+  /* posicion fija*/
+  height: 80px;
+  /* altura definida */
+  overflow: hidden;
+  /*ocultar los contenidos que sobresalen de la caja.*/
+  top: 0;
+  display: flex;
+  align-items: center;
+  background: rgba(74, 140, 184, 0.902);
+  width: 100%;
+}
+.logo {
+  background: url(../img/logo-removebg-preview.png) no-repeat 80% 80%;
+  /* imagen se escalará de forma que mantenga las proporciones*/
+  background-size: contain;
+  width: 180px;
+  height: 55px;
+  float: left;
+}
+
+.menu {
+  position: absolute;
+  right: 50px;
+}
+
+.menu a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 30px;
+  transition: color 1s;
+  /*text-transform: uppercase;*/
+}
+
+.menu a:hover {
+  color: #e85860;
+}
+
+header {
+  width: 120%;
+  height: 700px;
+  background: url(../img/cabecera.png) no-repeat;
+  background-size:contain;
+  margin-top: 80px;
+  justify-items: center;
+}
+
+/* ESTILOS PARA EL MENU DESPLEGABLE */
+.btn {
+  display: none;
+  position: absolute;
+  right: 20px;
+}
+.btn:hover > span {
+  background-color: #e85860;
+}
+.btn span {
+  display: block;
+  margin: 6px;
+  width: 40px;
+  height: 3px;
+  background: #333;
+}
+
+/* ESTILOS DE LA PAGINA EN GENERAL */
+p {
+  /*font-family: 'Poppins', sans-serif;
+    font-family: 'Lora', serif;;
+    /* font-family: 'Work Sans', sans-serif;*/
+  font-family: "Italianno", cursive;
+  padding: 20px;
+  font-size: 200px;
+  text-align: justify;
+  margin: 15px 25px;
+}
+h2 {
+  font-family: "Work Sans", sans-serif;
+  margin: 15px 25px;
+}
+@media only screen and (max-width: 550px) {
+  nav {
+    overflow: visible;
+  }
+  .menu {
+    width: 100%;
+    right: 0;
+    top: 80px;
+    background: #f1f1f1e6;
+    overflow: hidden;
+    max-height: 0;
+  }
+  .menu a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+  }
+  .btn {
+    display: block;
+    cursor: pointer;
+  }
+  .show {
+    max-height: 500px;
+  }
+}
+
+p {
+  font-size: small;
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+}
+section {
+  margin: 20px;
+}
+
+.content-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  border-radius: 15px;  /* Borde redondeado */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.text-box {
+  width: 60%;
+}
+
+.image-box {
+  width: 35%;
+  text-align: center;
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+}
+h3{
+  padding: 20px;
+}
+
+.footer {
+  background-color: rgb(191, 209, 220); /* Color de fondo del footer */
+  padding: 20px 0; /* Espacio interior del footer */
+  text-align: center; /* Centra el texto */
+  bottom: 0; /* Lo coloca en la parte inferior */
+  width: 100%; /* Hace que ocupe todo el ancho */
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.footer .container {
+  max-width: 1000px; /* Ancho máximo del contenido */
+  margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+
+.footer p {
+  margin: 5px 0; /* Espacio entre los párrafos */
+  color: #6c757d; /* Color del texto */
+}
+.social-icons {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%); /* Para centrar verticalmente */
+  display: flex;
+  flex-direction: column; /* Coloca los íconos uno debajo del otro */
+  gap: 15px; /* Espacio entre los íconos */
+  z-index: 1000; /* Asegura que esté sobre el contenido */
+}
+
+.social-icons a {
+  text-decoration: none;
+}
+
+.social-icons img {
+  width: 40px; /* Tamaño de los íconos, puedes ajustarlo */
+  height: 40px;
+  transition: transform 0.3s ease; /* Efecto al pasar el mouse por encima */
+}
+
+.social-icons img:hover {
+  transform: scale(1.2); /* Aumenta el tamaño del ícono al pasar el mouse */
+}
